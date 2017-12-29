@@ -70,6 +70,10 @@ class SiteController extends Controller
      *
      * @return mixed
      */
+    public function actionPull(){
+	`git pull origindev master`;
+    }
+
     public function actionIndex()
     {
         return $this->render('index');
